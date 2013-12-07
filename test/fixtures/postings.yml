@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  company: MyString
+  location: MyString
+  job_type: MyString
+  job_field: MyString
+  catagory: MyString
+  tags: MyString
+
+two:
+  title: MyString
+  company: MyString
+  location: MyString
+  job_type: MyString
+  job_field: MyString
+  catagory: MyString
+  tags: MyString

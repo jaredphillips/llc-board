@@ -1,0 +1,19 @@
+<% @postings.each do |posting| %>
+	<div class="job-posting">
+		<div class="posting-one">
+			<p class="job-title">
+				<%= link_to posting.title, '#' %></br>
+				<span id="company"><%= posting.company %></span>
+			</p>
+	  </div>
+	  <div class="posting-two">
+			<p>
+				<span id="city"><%= posting.location %></span></br>
+				<span id="type-of-job"><%= posting.job_type %></span></p>
+		</div>
+		<div class="posting-three">
+			<p class="date-posted"><%= posting.created_at.strftime("%b %d") %></p>
+	  </div>
+	</div>
+<% end %>
+<div></div>
