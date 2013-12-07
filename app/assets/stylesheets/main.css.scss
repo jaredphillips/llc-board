@@ -84,12 +84,23 @@ section {
   border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 	font-weight: 300;
+	transition: .5s;
+}
+
+
+.navbar-default .navbar-nav > li:hover {
+	background-color: #282828;
+	transition: .5s;
 }
 
 .navbar-default .navbar-nav > li > a {
 	color: white;
 	padding-top: 23px;
 	margin: -5px;
+	padding-bottom: 20px;
+	&:hover {
+		color: white;
+	}
 }
 // Job Type Navbar Finish
 
@@ -235,7 +246,7 @@ aside {
 
 // Popular Catagories & Tags Start
 
-.pop-catagories { 
+.popular-catagories { 
 	padding-top: 20px;
 	padding-bottom: 20px;
 	h5 {
@@ -243,7 +254,7 @@ aside {
 	}
 }
 
-.pop-tags {
+.popular-tags {
 	margin-bottom: 30px;
 }
 
