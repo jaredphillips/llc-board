@@ -49,23 +49,27 @@
 // Sign up/in Finish
 
 
-// Job Description Navbar Start
+// Job Field Navbar Start
 
-.job-descriptions {
-	clear:both;
-	background-color: lightgrey;
-	border-radius: 8px;
-	border: .1em solid grey;
-	.job-description {
-		list-style: none;
-		height: 32px;
-		li {
-			display: inline;
-			margin-right: 14px;
-		}
+.job-field {
+	background-color: #cccccc;
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	li:first-child {
+		margin-left: 10px;
+	}
+	li {
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 }
-// Job Description Navbar Finish
+
+.job-field > li > a {
+	color: black;
+}
+
+// Job Field Navbar Finish
 
 // Section Start
 
