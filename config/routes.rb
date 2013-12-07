@@ -1,5 +1,6 @@
 LlcBoard::Application.routes.draw do
 
+  resources :users
   resources :postings
 
   root 'postings#index'
