@@ -34,9 +34,6 @@
 
 // Sign up/in Start
 
-.top-nav {
-	width: 960px;
-}
 
 .sign-in {
 	font-weight: 300;
@@ -44,6 +41,10 @@
 	background-color: white;
 	text-align: right;
 	margin-bottom: 5px;
+	a {
+		font-weight: 700;
+		color: #c12aaa;
+	}
 }
 
 // Sign up/in Finish
@@ -51,10 +52,15 @@
 
 // Job Field Navbar Start
 
+.job-fields {
+
+}
+
 .job-field {
+	height: 50px;
 	background-color: #cccccc;
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 8px;
 	margin-bottom: 10px;
 	li:first-child {
 		margin-left: 10px;
