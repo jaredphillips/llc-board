@@ -167,6 +167,62 @@ section {
 	margin-right: 0px;
 }
 
+// =====================================
+
+.user-page-listings  {
+	width: 800px;
+	border-bottom: 1px solid lightgrey;
+	height: 90px;
+	font-weight: 300;
+	padding-top: 10px;
+	transition: .5s;
+	border-radius: 1px;
+	letter-spacing: -.5px;
+	&:hover {
+		background-color: #EDEBEB;
+		transition: .5s;
+	}
+}
+
+.user-page-listings > .posting-one {
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+	width: 400px;
+}
+
+.user-page-listings > .posting-one > .job-title > a {
+	color: black;
+	font-size: 20px;
+}
+
+.user-page-listings > .posting-two {
+	display: inline-block;
+	float: left;
+	width: 115px;
+}
+
+#city {
+	font-weight: bold;
+	color: #c12aaa;
+}
+
+#type-of-job {
+	font-size: 11px;
+}
+
+.user-page-listings > .posting-three {
+	display: inline-block;
+	float: left;
+	width: 80px;
+	margin-left: 10px;
+	margin-right: 0px;
+}
+
+.user-page-listings > .actions {
+	float: right;
+}
+
 // Styling for a job posting finish
 
 // Pagination Start 
