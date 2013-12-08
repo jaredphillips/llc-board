@@ -9,6 +9,8 @@ class PostingsController < ApplicationController
   end
 
   def destroy
+    @postings = Posting.find(params[:id])
+    @postings.destroy
     redirect_to :back
   end
 
