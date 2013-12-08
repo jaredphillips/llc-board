@@ -1,2 +1,6 @@
 
 <h2>Dashboard for <small><%= @user.email %></small></h2>
+
+<% @postings.each do |posting| %>
+	<%= posting.title %>
+<% end %>

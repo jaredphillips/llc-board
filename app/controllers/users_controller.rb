@@ -16,6 +16,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @postings = Posting.where(params[:user_id])
   end
 
   def update
