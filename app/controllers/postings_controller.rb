@@ -9,6 +9,7 @@ class PostingsController < ApplicationController
   end
 
   def destroy
+    redirect_to :back
   end
 
   def edit
