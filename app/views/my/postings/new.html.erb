@@ -1,2 +1,39 @@
-<h1>My::Postings#new</h1>
-<p>Find me in app/views/my/postings/new.html.erb</p>
+<form role="form">
+	<%= form_for [:my, @posting] do |f| %>
+
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+
+	<%= f.label :company %>
+	<%= f.text_field :company %>
+
+	<%= f.label :location %>
+	<%= f.text_field :location %>
+
+	<%= f.label :job_type %>
+	<%= f.text_field :job_type %>
+
+	<%= f.label :job_field %>
+	<%= f.text_field :job_field %>
+
+	<%= f.label :catagory %>
+	<%= f.text_field :catagory %>
+  
+  <%= f.label :job_description %>
+  <%= f.text_area :job_description, rows: 20 %>
+
+  <%= f.label :job_responsibilities %>
+  <%= f.text_area :job_responsibilities, rows: 20 %>
+
+  <%= f.label :required_experience %>
+  <%= f.text_area :required_experience, rows: 20 %>
+
+  <%= f.label :further_information %>
+  <%= f.text_area :further_information, rows: 10 %>
+
+  <%= f.label :compensation %>
+  <%= f.text_area :compensation, row: 5 %>
+
+	<%= f.submit "Post" %>
+	<% end %>
+</form>

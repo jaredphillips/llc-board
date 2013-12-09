@@ -32,7 +32,7 @@ class My::PostingsController < ApplicationController
   end
 
   def create
-    @posting = @user.projects.build(params[:posting])
+    @posting = Posting.new(posting_params)
     if @posting.save
       redirect_to [:my, :postings], notice: "Job Posting Created, Email Confirmation will arrive shortly"
     else
@@ -40,7 +40,13 @@ class My::PostingsController < ApplicationController
     end
   end
 
-  protected
+  private
+
+  def posting_params
+    params.require(:posting).permit(:title, :company, :location, :job_type, :job_field, :catagory, :tags, 
+      :updated_at, :user_id, :job_description, :job_responsibilities, :required_experience, 
+      :further_information, :compensation)
+  end
 
   # def require_posting
   #   @postings = @user.postings.find(params[:id])

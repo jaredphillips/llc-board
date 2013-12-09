@@ -2,15 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.posting-header {
-	padding-bottom: 20px;
+
+.well-lg {
+	width: 800px;
+	margin-bottom: 60px;
+	h2 {
+		float: left;
+		padding-bottom: 20px;
+	}
 }
 
-.posting-sub-header {
-	background-color: lightgrey;
-	height: 50px;
-	p {
-		padding-top: 15px;
-		margin-left: 20px;
-	}
+
+.actions {
+	padding-right: 10px;
 }

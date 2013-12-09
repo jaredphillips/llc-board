@@ -1,7 +1,8 @@
-<div class="dashboard-header">
-	<h2>Dashboard for <%= @user.email %></h2>
-	<%= link_to "Create a new posting", new_my_posting_path %></br>
+<div class="well well-lg">
+	<h3>Dashboard for <%= @user.email %></h3>
+	<p><%= link_to "Create a new posting", new_my_posting_path, class: "btn btn-success" %></p>
 </div>
+
 
 <% @postings.each do |posting| %>
 	<div class="user-page-listings">
