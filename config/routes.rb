@@ -1,10 +1,9 @@
 LlcBoard::Application.routes.draw do
 
   resources :postings
-
+  
   namespace :my do
-    resources :postings do
-    end
+    resources :postings 
   end
 
   resources :users, except: [:index]
