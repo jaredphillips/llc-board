@@ -1,8 +1,16 @@
 LlcBoard::Application.routes.draw do
 
-  resources :users
-  resources :sessions, only: [:new, :create, :destroy]
   resources :postings
+
+  namespace :my do
+    resources :postings do
+    end
+  end
+
+  resources :users, except: [:index]
+
+  resources :sessions, only: [:new, :create, :destroy]
+ 
 
   get '/signup',  to: 'users#new'
   get '/signin',  to: 'sessions#new'

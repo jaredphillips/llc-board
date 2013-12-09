@@ -1,29 +1,3 @@
-<div class="dashboard-header">
-	<h2>Dashboard for <%= @user.email %></h2>
-	<%= link_to "Create a new posting",  { class: "btn btn-primary btn-lg" } %></br>
-</div>
 
-<% @postings.each do |posting| %>
-	<div class="user-page-listings">
-		<div class="posting-one">
-			<p class="job-title">
-				<%= link_to posting.title, '#' %></br>
-				<span id="company"><%= posting.company %></span>
-			</p>
-	  </div>
-	  <div class="posting-two">
-			<p>
-				<span id="city"><%= posting.location %></span></br>
-				<span id="type-of-job"><%= posting.job_type %></span></p>
-		</div>
-		<div class="posting-three">
-			<p class="date-posted"><%= posting.created_at.strftime("%b %d") %></p>
-	  </div>
-	  <div class="actions">
-	  	<%= link_to "Edit", '#', class: "btn btn-info btn-xs" %>
-	  	<%= link_to "Delete", posting, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-xs" %>
-	  </div>
-	</div>
-<% end %>
 
 

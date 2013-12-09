@@ -1,3 +1,16 @@
 // Place all the styles related to the Postings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.posting-header {
+	padding-bottom: 20px;
+}
+
+.posting-sub-header {
+	background-color: lightgrey;
+	height: 50px;
+	p {
+		padding-top: 15px;
+		margin-left: 20px;
+	}
+}

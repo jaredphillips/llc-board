@@ -1,6 +1,6 @@
 <div class="sign-in pull-right">
 	<% if signed_in? %>
-		<p>Logged in as: <%= @user.email %>. <%= link_to "View, Edit or Post a Job!", user_path(@user.id) %> - 
+		<p>Logged in as: <%= @user.email %>. <%= link_to "View, Edit or Post a Job!", my_postings_path %> - 
 		<%= link_to "Log out", signout_path, method: "delete" %></p>
 	<% else %>
 	  <p>To post a job, <%= link_to "login", new_session_path %> or 

@@ -1,2 +1,6 @@
-<h1>Postings#show</h1>
-<p>Find me in app/views/postings/show.html.erb</p>
+<div class="posting-header">
+	<h2><%= @posting.title %><small> <%= @posting.company %></small></h2>
+</div>
+<div class="posting-sub-header">
+	<p>This is a <b><%= @posting.job_type %></b> position in <b><%= @posting.location %></b> posted on <b><%= @posting.created_at.strftime("%b %d") %></b></p>
+</div>

@@ -1,21 +1,4 @@
 class PostingsController < ApplicationController
-  def new
-  end
-
-  def create
-  end
-
-  def update
-  end
-
-  def destroy
-    @postings = Posting.find(params[:id])
-    @postings.destroy
-    redirect_to :back
-  end
-
-  def edit
-  end
 
   def index
     @user = User.find_by(params[:id])
@@ -23,5 +6,6 @@ class PostingsController < ApplicationController
   end
 
   def show
+    @posting = Posting.find(params[:id])
   end
 end
