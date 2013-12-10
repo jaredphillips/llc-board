@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131210021543) do
+ActiveRecord::Schema.define(version: 20131210051031) do
 
   create_table "postings", force: true do |t|
     t.string   "title"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20131210021543) do
     t.string   "required_experience"
     t.string   "further_information"
     t.string   "compensation"
+    t.string   "how_to_apply"
   end
 
   create_table "taggings", force: true do |t|

@@ -21,6 +21,7 @@ class My::PostingsController < ApplicationController
                            further_information: params[:posting][:further_information],
                            compensation: params[:posting][:compensation])
     if @posting.save 
+      PostingMailer.confirmation_mailer(current_user.email).deliver
       redirect_to my_postings_path, notice: "Job Posting Created, Email Confirmation will arrive shortly"
     else
       render new_my_posting_path

@@ -4,3 +4,31 @@
 <div class="posting-sub-header">
 	<p>This is a <b><%= @posting.job_type %></b> position in <b><%= @posting.location %></b> posted on <b><%= @posting.created_at.strftime("%b %d") %></b></p>
 </div>
+<div class="job-main-body">
+	<div class="job-block">
+		<h5>Job description</h5>
+		<p><%= @posting.job_description %></p>
+	</div>
+	<div class="job-block">
+		<h5>Job responsibilities</h5>
+		<p><%= @posting.job_responsibilities %></p>
+	</div>
+	<div class="job-block">
+		<h5>Required Experience</h5>
+		<p><%= @posting.required_experience %></p>
+	</div>
+	<div class="job-block">
+		<h5>Further Information</h5>
+		<p><%= @posting.further_information %></p>
+	</div>
+	<div class="job-block">
+		<h5>Compensation</h5>
+		<p><%= @posting.compensation %></p>
+	</div>
+  <div class="job-tags">
+  	<p>Tags: <%= raw @posting.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %><p>
+	</div>
+	<div class="how-to-apply">
+		<%= @posting.how_to_apply %>
+	</div>
+</div>
