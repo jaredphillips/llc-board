@@ -95,6 +95,7 @@ section {
 	border-top-right-radius: 8px;
 	font-weight: 300;
 	transition: .5s;
+	margin: 8px;
 }
 
 
@@ -107,7 +108,7 @@ section {
 	color: white;
 	padding-top: 23px;
 	margin: -5px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	&:hover {
 		color: white;
 	}
@@ -120,7 +121,7 @@ section {
 	border-bottom: 1px solid lightgrey;
 	height: 100px;
 	font-weight: 300;
-	padding-top: 10px;
+	padding-top: 5px;
 	transition: .5s;
 	border-radius: 1px;
 	letter-spacing: -.5px;
@@ -129,6 +130,17 @@ section {
 		background-color: #EDEBEB;
 		transition: .5s;
 	}
+}
+
+.new-posting {
+	background-color: #b1009a;
+	color: white;
+	font-size: 11px;
+	letter-spacing: 0.2px;
+	font-family: 'Nunito', sans-serif;
+	padding: 3px 5px 3px 5px;
+	border-radius: 5px;
+	margin: 0px 0px 40px 10px;
 }
 
 

@@ -2,7 +2,11 @@
 	<div class="job-posting">
 		<div class="posting-one">
 			<p class="job-title">
-				<%= link_to posting.title, posting_path(posting) %></br>
+				<%= link_to posting.title, posting_path(posting) %>
+				<% if posting.created_at.today? %>
+					<span class="new-posting">NEW</span>
+				<% end %>
+			</br>
 				<span id="company"><%= posting.company %></span>
 			</p>
 	  </div>

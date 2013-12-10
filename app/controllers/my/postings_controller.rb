@@ -60,11 +60,5 @@ class My::PostingsController < ApplicationController
     @postings.destroy
     redirect_to :back
   end
-
-  private
-
-  # def posting_params
-  #   params.require(:posting).permit(:title, :company, :location, :job_type, :job_field, :catagory, :tags, :updated_at, :user_id, :job_description, :job_responsibilities, :required_experience, :further_information, :compensation)
-  # end
 end
 
