@@ -14,7 +14,7 @@ class My::PostingsController < ApplicationController
                            company: params[:posting][:company],
                            job_type: params[:posting][:job_type],
                            catagory: params[:posting][:catagory],
-                           tag_list: params[:posting][:tag_list].capitalize,
+                           tag_list: params[:posting][:tag_list].downcase,
                            job_description: params[:posting][:job_description],
                            job_responsibilities: params[:posting][:job_responsibilities],
                            required_experience: params[:posting][:required_experience],
