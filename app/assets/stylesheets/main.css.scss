@@ -135,7 +135,7 @@ section {
 .new-posting {
 	background-color: #b1009a;
 	color: white;
-	font-size: 11px;
+	font-size: 10px;
 	letter-spacing: 0.2px;
 	font-family: 'Nunito', sans-serif;
 	padding: 3px 5px 3px 5px;
@@ -290,6 +290,8 @@ section {
 
 .paginate-container {
 	background-color: black;
+	margin-left: 10px;
+	width: 650px;
 	height: 70px;
 	margin-bottom: 40px;
 	border-bottom-left-radius: 8px;
@@ -334,14 +336,13 @@ aside {
 }
 
 #job-arrow {
-	border-radius: 8px;
-	padding-left: 12px;
-	padding-right: 5px;
+	border-radius: 13px;
+	padding: 0px 7px 0px 9px;
 	background-color: #c12aaa;
 	margin-right: 10px;
 	color: white;
 	text-align: center;
-	height: 500px;
+	font-size: 19px;
 	a {
 	}
 }

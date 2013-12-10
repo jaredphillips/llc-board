@@ -1,8 +1,10 @@
 <p>30 days for $30. All proceeds support </br>Ladies Learning Code.</br></br>
-  <%= link_to "> ", '#', id: "job-arrow" %> 
+   
   <% if current_user %>
+    <%= link_to ">", new_my_posting_path, id: "job-arrow" %>
   	<%= link_to " Post a job!", new_my_posting_path %>
 	<% else %>
+		<%= link_to ">", new_user_path, id: "job-arrow" %>
   	<%= link_to " Post a job!", new_user_path %>
   <% end %>    	
 </p>

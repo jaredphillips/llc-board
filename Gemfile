@@ -35,17 +35,15 @@ end
 # Use act as taggable for tag implementation
 gem 'acts-as-taggable-on'
 
-# Use letter-opener to open emails in browswer for development
-gem "letter_opener", :group => :development
 
 # Use will paginate for the obvious.
 gem 'will_paginate', '~> 3.0'
-
 
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
   gem 'meta_request'
+  gem "letter_opener"
 end
 
 # Use ActiveModel has_secure_password
