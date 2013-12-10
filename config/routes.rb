@@ -1,5 +1,7 @@
 LlcBoard::Application.routes.draw do
 
+  get 'tags/:tag', to: 'postings#index', as: :tag
+
   resources :postings
   
   namespace :my do

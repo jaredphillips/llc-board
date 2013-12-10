@@ -32,6 +32,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Use act as taggable for tag implementation
+gem 'acts-as-taggable-on'
+
+# Use letter-opener to open emails in browswer for development
 gem "letter_opener", :group => :development
 
 # Use will paginate for the obvious.

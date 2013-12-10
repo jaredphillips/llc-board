@@ -20,8 +20,11 @@
 			<p class="date-posted"><%= posting.created_at.strftime("%b %d") %></p>
 	  </div>
 	  <div class="actions">
-	  	<%= link_to "Edit", '#', class: "btn btn-info btn-sm" %>
+	  	<%= link_to "Edit", edit_my_posting_path(posting), class: "btn btn-info btn-sm" %>
 	  	<%= link_to "Delete", my_posting_path(posting), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-sm" %>
 	  </div>
+	  <div class="tags">
+		  <p>Tags: <%= raw posting.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></p>	  
+		</div>
 	</div>
 <% end %>
