@@ -167,14 +167,32 @@ section {
 	margin-right: 0px;
 }
 
-.well-lg {
+.dashboard-container {
 	width: 800px;
-	margin-bottom: 60px;
-	h2 {
+	height: 65px;
+	background-color: #D7C8E6;
+	display: inline-block;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	h3 {
 		float: left;
-		padding-bottom: 20px;
+		padding-left: 10px; 
+	}
+	.button-group {
+		padding-top: 15px;
+		padding-right: 10px;	
+		a {
+			margin-left: 10px;
+			float: right;
+
+		}
 	}
 }
+
+.btn-sm {
+	margin-right: 10px;
+}
+
 
 
 .actions {
@@ -184,10 +202,11 @@ section {
 .tags {
 	clear: both;
 	margin-left: 10px; 
-	margin-bottom: 8px;
+	
 	p {
 	margin-right: 8px;
 	color: grey;
+	margin-bottom: 10px;
 	}
 }
 
@@ -199,6 +218,7 @@ section {
 	height: 90px;
 	font-weight: 300;
 	padding-top: 10px;
+	padding-bottom: 5px;
 	transition: .5s;
 	border-radius: 1px;
 	letter-spacing: -.5px;
