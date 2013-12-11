@@ -19,7 +19,8 @@ class My::PostingsController < ApplicationController
                            job_responsibilities: params[:posting][:job_responsibilities],
                            required_experience: params[:posting][:required_experience],
                            further_information: params[:posting][:further_information],
-                           compensation: params[:posting][:compensation])
+                           compensation: params[:posting][:compensation],
+                           how_to_apply: params[:posting][:how_to_apply])
     if @posting.save 
       PostingMailer.confirmation_mailer(current_user.email).deliver
       redirect_to my_postings_path, notice: "Job Posting Created, Email Confirmation will arrive shortly"

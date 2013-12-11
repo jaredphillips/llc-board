@@ -1,6 +1,5 @@
 @import "../../../vendor/assets/stylesheets/bootstrap/bootstrap.scss";
 
-
 // Navbar start
 
 .header {
@@ -52,9 +51,6 @@
 
 // Job Field Navbar Start
 
-.job-fields {
-
-}
 
 .job-field {
 	height: 50px;
@@ -120,12 +116,13 @@ section {
 .job-posting {
 	border-bottom: 1px solid lightgrey;
 	height: 100px;
+	width: 650px;
 	font-weight: 300;
 	padding-top: 5px;
 	transition: .5s;
 	border-radius: 1px;
 	letter-spacing: -.5px;
-	width: 670px;	
+	margin-left: 10px;	
 	&:hover {
 		background-color: #EDEBEB;
 		transition: .5s;
@@ -412,46 +409,100 @@ aside {
 	width: 960px;
 }
 
-/* forms */
+// Error Message Flash Finish
 
-// input, textarea, select, .uneditable-input {
-//   border: 1px solid #bbb;
-//   height: 30px;
-//   width: 60%;
-//   margin-bottom: 15px;
-// }
+// Posting Job Show Start 
 
-// input {
-//   height: auto !important;
-// }
+.posting-header {
+	margin-left: 15px;
+}
 
-// Footer Start
+#posting-header-button {
+	margin-right: 15px;
+}
 
-footer {
-	height: 100px;
-	clear:both;
-	border-top: 1px solid black;
+.posting-sub-header {
+	background-color: lightgrey;
+	height: 50px;
 	margin-top: 30px;
-	margin-bottom: 0px;
-
+	margin-bottom: 40px;
+	p {
+		padding-top: 15px;
+		padding-left: 10px;
+	}
+	.posting-catagory {
+		background-color: white;
+		margin-right: 20px;
+		padding: 2px 5px 2px 5px;
+		border-radius: 5px;
+	}
 }
 
-.footer-container {
-
+.job-main-body {
+	padding-left: 15px;
+	padding-right: 15px;
+	.job-block {
+		margin-bottom: 30px;
+		h4 {
+			margin-bottom: 30px;
+		}
+	}
 }
 
-.footer-container > p {
-	margin-top: 15px;
-	font-weight: 300;
-	font-size: 10px;
-	color: grey;
+.job-block-compensation {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	h4 {
+	  padding-left: 10px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	p {
+		margin-bottom: 30px;
+		padding-left: 10px;
+	}
 }
 
-.footer-container > p > a {
-	text-decoration: underline;
-	color: grey;
+.how-to-apply {
+	margin-top: 30px;
+	margin-bottom: 30px;
+  background-color: #f2f2f2;
+  height: 100px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  p {
+  	padding-top: 20px
+  }
 }
 
+.how-to-apply-image {
+	font-size: 40px;
+	color: #f2f2f2;
+	background-color: #c12aab;
+	border-radius: 30px;
+	padding: 2px 10px 2px 10px;
+	margin-left: 15px;
+}
 
-// Footer Finish
+.how-to-apply-big-text {
+	color: #c12aab;
+	padding-left: 20px;
+	font-size: 25px;
+	width: 40px;
+}
 
+.how-to-apply-small-text {
+	margin-left: 50px;
+}
+
+.job-tags {
+	margin-left: 30px;
+	p {
+		font-size: 22px;
+	}
+}
+
+.sign-in-button {
+	margin-left: 30px;
+	vertical-align: center;
+}

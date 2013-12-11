@@ -1,34 +1,42 @@
 <div class="posting-header">
-	<h2><%= @posting.title %><small> <%= @posting.company %></small></h2>
+	<h2><%= @posting.title %> </br><small><%= @posting.company %></small><span class="home-button">
+			<%= link_to "Back to Listings", root_path, class: "btn btn-default pull-right", id: "posting-header-button" %>
+	  </span>
+	</h2>
 </div>
 <div class="posting-sub-header">
-	<p>This is a <b><%= @posting.job_type %></b> position in <b><%= @posting.location %></b> posted on <b><%= @posting.created_at.strftime("%b %d") %></b></p>
+	<p>This is a <b><%= @posting.job_type %></b> position in <b><%= @posting.location %></b> posted on <b><%= @posting.created_at.strftime("%b %d") %></b><span class="posting-catagory pull-right"><%= @posting.catagory %></span></p>
 </div>
+
 <div class="job-main-body">
 	<div class="job-block">
-		<h5>Job description</h5>
+		<h4>Job description</h4>
 		<p><%= @posting.job_description %></p>
 	</div>
 	<div class="job-block">
-		<h5>Job responsibilities</h5>
+		<h4>Job responsibilities</h4>
 		<p><%= @posting.job_responsibilities %></p>
 	</div>
 	<div class="job-block">
-		<h5>Required Experience</h5>
+		<h4>Required Experience</h4>
 		<p><%= @posting.required_experience %></p>
 	</div>
 	<div class="job-block">
-		<h5>Further Information</h5>
+		<h4>Further Information</h4>
 		<p><%= @posting.further_information %></p>
 	</div>
-	<div class="job-block">
-		<h5>Compensation</h5>
+	<div class="job-block-compensation">
+		<h4>Compensation</h4>
 		<p><%= @posting.compensation %></p>
+	</div>
+	<div class="how-to-apply">
+		<p>
+			<span class="how-to-apply-image">➜</span>
+			<span class="how-to-apply-big-text">How to Apply</span>
+			<span class="how-to-apply-small-text"><%= @posting.how_to_apply %></span>
+		</p>
 	</div>
   <div class="job-tags">
   	<p>Tags: <%= raw @posting.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %><p>
-	</div>
-	<div class="how-to-apply">
-		<%= @posting.how_to_apply %>
 	</div>
 </div>

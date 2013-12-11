@@ -1,0 +1,25 @@
+footer {
+	height: 100px;
+	clear:both;
+	border-top: 1px solid black;
+	margin-top: 30px;
+	margin-bottom: 0px;
+
+}
+
+.footer-container {
+
+}
+
+.footer-container > p {
+	margin-top: 15px;
+	font-weight: 300;
+	font-size: 10px;
+	color: grey;
+}
+
+.footer-container > p > a {
+	text-decoration: underline;
+	color: grey;
+}
+

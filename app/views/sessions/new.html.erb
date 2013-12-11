@@ -1,18 +1,30 @@
-<h1>Sign in</h1>
+<h1>Sign in<span class="home-button"><%= link_to 'Back to Listings', root_path, class: "btn btn-default pull-right" %></span>
+</h1>
+<%= form_for(:session, url: sessions_path) do |f| %>
+  <form class="form-horizontal" role="form">
+    
+    <div class="form-group">  
+      <%= f.label :email, class: "col-sm-2 control-label"  %>
+      <div class="col-sm-10">
+        <%= f.text_field :email, class: "form-control", placeholder: "Title" %></br>
+      </div>
+    </div>
 
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(:session, url: sessions_path) do |f| %>
+    <div class="form-group">  
+      <%= f.label :password, class: "col-sm-2 control-label"  %>
+      <div class="col-sm-10">
+        <%= f.password_field :password, class: "form-control", placeholder: "Title" %></br>
+      </div>
+    </div>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <%= f.submit "Sign in", class: "btn btn-large btn-primary" %></br></br></br>
+      </div>
+    </div>
+  </form>
+<% end %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
+<%= link_to "New user? Sign up now!", signup_path, class: "btn btn-large btn-success sign-in-button" %>
 
-      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
-    <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
-  </div>
-</div>
