@@ -1,20 +1,37 @@
-<h1>Sign up</h1>
+<h1>Create an account<span class="home-button"><%= link_to 'Back to Listings', root_path, class: "btn btn-default pull-right" %></span>
+</h1>
 
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(@user) do |f| %>
-      <%= render 'shared/error_messages' %>
+<%= form_for(@user) do |f| %>
+ <%= render 'shared/error_messages' %>
+  <form class="form-horizontal" role="form">
+  
+    <div class="form-group">  
+      <%= f.label :email, class: "col-sm-2 control-label"  %>
+      <div class="col-sm-10">
+        <%= f.text_field :email, class: "form-control", placeholder: "Email" %></br>
+      </div>
+    </div>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+    <div class="form-group">  
+      <%= f.label :password, class: "col-sm-2 control-label"  %>
+      <div class="col-sm-10">
+        <%= f.password_field :password, class: "form-control", placeholder: "Password" %></br>
+      </div>
+    </div>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
+    <div class="form-group">  
+      <%= f.label :password_confirmation, class: "col-sm-2 control-label"  %>
+      <div class="col-sm-10">
+        <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Password Confirmation" %></br>
+      </div>
+    </div>
 
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation %>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <%= f.submit "Sign in", class: "btn btn-large btn-primary" %></br></br></br>
+      </div>
+    </div>
+  </form>
+<% end %>
 
-      <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
-    <% end %>
-  </div>
-</div>
+<%= link_to "Already have an account?", new_session_path, class: "btn btn-large btn-success sign-in-button" %>

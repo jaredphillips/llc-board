@@ -86,7 +86,7 @@ section {
 .job-type {
 	background-color: black;
 	font-family: 'Open Sans', sans-serif;
-  height: 55px; 
+  height: 100%; 
   border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 	font-weight: 300;
@@ -98,17 +98,19 @@ section {
 .navbar-default .navbar-nav > li:hover {
 	background-color: #282828;
 	transition: .5s;
+	height: 100%;
 }
 
 .navbar-default .navbar-nav > li > a {
 	color: white;
 	padding-top: 23px;
 	margin: -5px;
-	padding-bottom: 10px;
+	padding-bottom: 25px;
 	&:hover {
 		color: white;
 	}
 }
+
 // Job Type Navbar Finish
 
 // Styling for a job posting start
