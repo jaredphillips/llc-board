@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20131212014646) do
     t.string   "further_information"
     t.string   "compensation"
     t.string   "how_to_apply"
-    t.string   "user_id"
+    t.integer  "user_id"
   end
 
   create_table "taggings", force: true do |t|
