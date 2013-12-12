@@ -9,6 +9,9 @@ gem 'rails', '4.0.1'
 # Use postgres for production for heroku deployment. 
 gem 'pg'
 
+# Heroku needs this gem for deployment.
+gem 'rails_12factor', group: :production
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -60,3 +63,6 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Heroku wants us to declare the ruby version being used.
+ruby "2.0.0"
