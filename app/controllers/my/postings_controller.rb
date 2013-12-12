@@ -10,7 +10,7 @@ class My::PostingsController < ApplicationController
   def create
     @posting = Posting.new(user_id: current_user.id,
                            title: params[:posting][:title],
-                           location: params[:posting][:location].capitalize,
+                           location: params[:posting][:location],
                            company: params[:posting][:company],
                            job_type: params[:posting][:job_type],
                            catagory: params[:posting][:catagory],
@@ -22,7 +22,7 @@ class My::PostingsController < ApplicationController
                            compensation: params[:posting][:compensation],
                            how_to_apply: params[:posting][:how_to_apply])
     if @posting.save 
-      PostingMailer.confirmation_mailer(current_user.email).deliver
+      # PostingMailer.confirmation_mailer(current_user.email).deliver
       redirect_to my_postings_path, notice: "Job Posting Created, Email Confirmation will arrive shortly"
     else
       render new_my_posting_path
