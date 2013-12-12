@@ -46,7 +46,8 @@ class My::PostingsController < ApplicationController
                        job_responsibilities: params[:posting][:job_responsibilities],
                        required_experience: params[:posting][:required_experience],
                        further_information: params[:posting][:further_information],
-                       compensation: params[:posting][:compensation])
+                       compensation: params[:posting][:compensation],
+                       how_to_apply: params[:posting][:how_to_apply])
       redirect_to my_postings_path, notice: 'Posting was successfully updated.'
     else
       render edit_my_posting_path(@posting), notice: "Posting was not updated, try again"

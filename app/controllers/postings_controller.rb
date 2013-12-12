@@ -6,7 +6,7 @@ class PostingsController < ApplicationController
       @postings = Posting.tagged_with(params[:tag]).paginate(page: params[:page], per_page: 12)
     else
 	    @user = User.find_by(params[:id])
-	    @postings = Posting.order('created_at DESC').paginate(page: params[:page], per_page: 12)
+	    @postings = Posting.order('created_at DESC').paginate(page: params[:page], per_page: 10)
     end  
   end
 
