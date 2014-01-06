@@ -1,5 +1,6 @@
 <h3>New Job Posting <small>Leave blank if not applicable</small></h3></br>
 <%= form_for [:my, @posting] do |f| %>
+	<%= render 'shared/posting_error' %>
 	<form class="form-horizontal" role="form">
 	  
 	  <div class="form-group">	
